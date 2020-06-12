@@ -1,0 +1,5 @@
+a) If x or y is and expression it can cause faulty behaviour
+    of the operator precedence when.
+    #define AVG(x,y) (((x)-(y))/2)
+b) The same applies for b.
+    #define AREA(x,y) ((x)*(y))

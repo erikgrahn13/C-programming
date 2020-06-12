@@ -1,0 +1,3 @@
+a) extern storage class
+b) static storage class
+c) extern and static

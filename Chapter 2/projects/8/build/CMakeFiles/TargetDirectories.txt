@@ -1,0 +1,3 @@
+/Users/Erik/Desktop/C programming - A modern approach/Chapter 1/projects/8/build/CMakeFiles/rebuild_cache.dir
+/Users/Erik/Desktop/C programming - A modern approach/Chapter 1/projects/8/build/CMakeFiles/edit_cache.dir
+/Users/Erik/Desktop/C programming - A modern approach/Chapter 1/projects/8/build/CMakeFiles/8.dir

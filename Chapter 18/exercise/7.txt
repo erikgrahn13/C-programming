@@ -1,0 +1,4 @@
+a) false, const objects cant be used in switch statements
+b) true
+c) true
+d) true

@@ -1,0 +1,12 @@
+int num_digits(int n)
+{
+    int number_of_digits = 0;
+
+    while (n != 0)
+    {
+        n /= 10;
+        number_of_digits++;
+    }
+
+    return number_of_digits;
+}

@@ -1,0 +1,13 @@
+void get_extension(const char *file_name, char *extension)
+{
+    for (char i = 0; i < strlen(file_name); i++)
+    {
+        if (file_name[i] == '.')
+        {
+            strcpy(extension, &file_name[i + 1]);
+            return;
+        }
+    }
+
+    strcpy(extension, "");
+}

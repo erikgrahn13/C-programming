@@ -1,0 +1,4 @@
+between #include and <stdio.h>
+between int and main
+between int and height
+between return and 0

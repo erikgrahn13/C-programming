@@ -1,0 +1,17 @@
+int *find_largest(int a[], int n)
+{
+    int tmp = a[0];
+    int j;
+
+    for(int i = 1; i < n; i++)
+    {
+        if(a[i] > tmp)
+        {
+            j = i;
+            tmp = a[i];
+        }
+    }
+
+    return &a[j];
+
+}

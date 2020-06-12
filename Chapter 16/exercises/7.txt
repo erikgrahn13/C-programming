@@ -1,0 +1,51 @@
+a)
+    fraction_t reduce_fraction(fraction_t f)
+    {
+        int divisor = gcd(f.numerator, f.denominator);
+        f.numerator /= divisor;
+        f.denominator /= divisor;
+
+        return f;
+    }
+
+b)
+    fraction_t add_fractions(fraction_t f1, fraction_t f2)
+    {
+        f1.numerator *= f2.denominator;
+        f2.numerator *= f1.denominator;
+
+        f1.denominator *= f2.denominator;
+        f2.denominator = f1.denominator;
+
+        int divisor = gcd(f1.numerator+f2.numerator, f1.denominator);
+
+        return reduce_fraction((fraction_t){(f1.numerator+f2.numerator)/ divisor, f1.denominator / divisor});
+
+    }
+
+c)
+    fraction_t subtract_fractions(fraction_t f1, fraction_t f2)
+    {
+        f1.numerator *= f2.denominator;
+        f2.numerator *= f1.denominator;
+
+        f1.denominator *= f2.denominator;
+        f2.denominator = f1.denominator;
+
+        int divisor = gcd(f1.numerator+f2.numerator, f1.denominator);
+
+        return reduce_fraction((fraction_t){(f1.numerator-f2.numerator)/ divisor, f1.denominator / divisor});
+
+    }
+
+d)
+    fraction_t multiply_fractions(fraction_t f1, fraction_t f2)
+    {
+        return reduce_fraction((fraction_t){f1.numerator*f2.numerator, f1.denominator*f2.denominator});
+    }
+
+e)
+    fraction_t divide_fractions(fraction_t f1, fraction_t f2)
+    {
+        return reduce_fraction((fraction_t){f1.numerator*f2.denominator, f1.denominator*f2.numerator});
+    }

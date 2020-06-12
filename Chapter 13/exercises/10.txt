@@ -1,0 +1,2 @@
+q is pointing to nowhere and is a local variable
+that will be out of scope after the function

@@ -1,0 +1,20 @@
+if the new_node has a higher number than any already in the list
+- if the new_node is going to be placed first in the list 
+  the coding is trying to use prev as a null pointer
+
+fix
+struct node *insert_into_ordered_list(struct node *list, struct node *new_node)
+{
+    struct *cur = list, *prev = NULL;
+    while(cur != NULL && cur->value <= new_node->value)
+    {
+        prev = cur;
+        cur = cur->next;
+    }
+    
+
+    prev->next = new_node;
+    new_node->next = cur;
+    return list;
+
+}

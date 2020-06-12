@@ -1,0 +1,15 @@
+
+while(...)
+{
+    ...
+    continue;
+    ...
+}
+
+while(...)
+{
+    ...
+    goto loop_end;
+    ...
+    loop_end:;
+}

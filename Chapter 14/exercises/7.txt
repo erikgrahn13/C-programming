@@ -1,0 +1,9 @@
+a) long long_max(long x, long y)
+   {
+       return x > y ? x : y
+   }
+
+b) The string tokenizer cant operate on two words and there not
+    be able to concatenate them into a proper function name
+
+c) typedef unsigned long ULONG

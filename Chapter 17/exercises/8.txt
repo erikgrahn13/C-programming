@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+#define NUMBER_OF_NODES 5
+
+typedef struct node{
+    int value;
+    struct node *next;
+}node_t;
+
+
+node_t *stack = NULL;
+
+void stack_underflow(void)
+{
+    printf("Stack is empty\n");
+    exit(EXIT_FAILURE);
+}
+
+void make_empty(void)
+{
+    node_t *p = stack;
+    node_t *tmp;
+
+    while(p)
+    {
+        tmp = p;
+        p = p->next;
+        free(tmp);
+    }
+}
+
+bool is_empty(void)
+{
+    if(stack == NULL)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    
+}
+
+
+bool push(int i)
+{
+    node_t *new_node = malloc(sizeof(node_t));
+    
+    if(new_node == NULL)
+    {
+        return false;
+    }
+    
+    new_node->value = i;
+    new_node->next = stack;
+    stack = new_node;
+    
+    return true;
+}
+
+int pop(void)
+{
+    if(!is_empty())
+    {
+        int value = stack->value;
+        node_t *tmp = stack;
+        stack = stack->next;
+        free(tmp);
+
+        return value;
+    }
+    else
+    {
+        stack_underflow();
+    }
+}

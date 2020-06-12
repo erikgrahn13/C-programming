@@ -1,0 +1,17 @@
+void delete_from_list(struct node **list, int n)
+{
+    struct node *node = *list;
+
+    while(node)
+    {
+        if(node->value == n)
+        {
+            *list = node->next;
+            free(node);
+            return;
+        }
+
+        list = &node->next;
+        node = node->next;
+    }
+}

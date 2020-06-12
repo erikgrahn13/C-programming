@@ -1,0 +1,14 @@
+int strcmp(char *s, char *t)
+{
+    char *p;
+    char *q;
+
+    for (p = s, q = t; *p == *q; p++, q++)
+    {
+        if (*p == '\0')
+        {
+            return 0;
+        }
+    }
+    return *p - *q;
+}

@@ -1,0 +1,2 @@
+because it is hard to read and to distinguish that the
+variable consists of several letters (underscores)

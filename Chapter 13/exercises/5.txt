@@ -1,0 +1,24 @@
+a)
+void capitalize(char str[])
+{
+
+    int i = 0;
+    while (str[i] != '\0')
+    {
+        str[i] = toupper(str[i]);
+        i++;
+    }
+}
+
+b)
+void capitalize(char *str)
+{
+
+    char *p = str;
+
+    while (*p != '\0')
+    {
+        *p = toupper(*p);
+        p++;
+    }
+}

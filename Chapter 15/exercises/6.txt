@@ -1,0 +1,4 @@
+a) main.c f1.c f2.c
+b) only f1.c if no changes is made to f1.h
+c) main.c f1.c f2.c
+d) f1.c f2.c

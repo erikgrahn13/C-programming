@@ -1,0 +1,6 @@
+a) put in header
+b) not put in header - if several files include the header file
+that has a function definition there will be compilation errors
+due to multiple definitions of the same function
+c) put in header
+d) put in header

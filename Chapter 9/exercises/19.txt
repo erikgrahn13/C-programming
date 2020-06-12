@@ -1,0 +1,1 @@
+The function prints the value of n in binary form

@@ -1,0 +1,5 @@
+a) legal, floating-point
+b) legal, floating point
+c) not legal
+d) not legal
+e) legal, floating-point

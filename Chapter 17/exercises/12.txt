@@ -1,0 +1,15 @@
+struct node *find_last(struct node *list, int n)
+{
+    struct node *p = list;
+    struct node *tmp = NULL;
+    while(p)
+    {
+        if(p->value == n)
+        {
+            tmp = p;
+        }
+        p = p->next;
+    }
+
+    return tmp;
+}

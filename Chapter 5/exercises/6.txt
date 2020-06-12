@@ -1,0 +1,3 @@
+Yes it is legal. If n is equal to 5 the statement
+will be resolved to false and the print statement will not be
+executed

@@ -1,0 +1,4 @@
+a) false, static variables declared inside a block has block scope
+b) false, extern variables in inside a function has external linkage
+c) true, automatic variables has no linkage 
+d) true, since they behave as auto variables

@@ -1,0 +1,9 @@
+after the first free, p will be a dangling pointer
+solution;
+
+while(p)
+{
+    tmp = p;
+    p = p->next;
+    free(tmp;)
+}

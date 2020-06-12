@@ -1,0 +1,11 @@
+a) work
+b) not work since it is not a character
+c) not work since it expects a string
+d) work
+e) not work since it is not a char *
+f) work
+g) work
+h) not work since it is not a character
+i) not work since it is not a char *
+j) not work will write two newline characters
+k) work

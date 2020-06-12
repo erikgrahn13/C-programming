@@ -1,0 +1,3 @@
+a) Hide information and encapsulate information in different files.
+b) Confusion between public and private access of variables and 
+    functions between several small files.

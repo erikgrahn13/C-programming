@@ -1,0 +1,3 @@
+pointer cannot be added.
+fix would be:
+middle = low + (high - low) / 2 since (high - low) / 2 is an integer

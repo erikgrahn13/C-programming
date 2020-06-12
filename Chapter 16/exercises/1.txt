@@ -1,0 +1,2 @@
+Legal, since structure members are contained in the scope
+of the structure itself

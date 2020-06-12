@@ -1,0 +1,10 @@
+void *my_malloc(int n)
+{
+    void *tmp = malloc(sizeof(char)*n);
+    if(tmp == NULL)
+    {
+        printf("Malloc failed, terminate program\n");
+        exit(EXIT_FAILURE);
+    }
+    return tmp;
+}

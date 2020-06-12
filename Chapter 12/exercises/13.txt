@@ -1,0 +1,18 @@
+double ident[N][N];
+    double *p = &ident[0][0];
+    *p = 1.0;
+    p++;
+    int count = 0;
+    for (; p < &ident[N - 1][N]; p++)
+    {
+        if (count == N)
+        {
+            *p = 1.0;
+            count = 0;
+        }
+        else
+        {
+            *p = 0.0;
+            count++;
+        }
+    }

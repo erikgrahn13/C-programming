@@ -1,0 +1,4 @@
+a) b inside f, c, d
+b) a, b, c inside g
+c) a inside block, b, c inside g, d
+d) b, c inside main, d

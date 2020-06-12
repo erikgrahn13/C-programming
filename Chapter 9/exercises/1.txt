@@ -1,0 +1,9 @@
+1. product needs to be declared inside the function body
+2. height needs to be declared with a type
+
+double triangle_area(double base, double height)
+{
+    double product;
+    product = base * height;
+    return product / 2;
+}

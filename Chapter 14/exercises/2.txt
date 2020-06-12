@@ -1,0 +1,1 @@
+#define NELEMS(a) (sizeof(a) / siezeof(a[0]))

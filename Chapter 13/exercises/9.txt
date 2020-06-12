@@ -1,0 +1,4 @@
+1 - s1 = computer
+2 - s2 = science
+3 - s1 = computerscience
+4 - s1 = computers

@@ -1,0 +1,3 @@
+#define TEST(x) #x
+#define TEST2(x) TEST(x)
+#define LINE_FILE "Line " TEST2(__LINE__) " of " __FILE__

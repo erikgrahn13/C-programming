@@ -1,0 +1,11 @@
+char *duplicate(char *str)
+{
+    char *tmp = malloc(strlen(str)+1);
+    if(tmp == NULL)
+    {
+        return NULL;
+    }
+
+    strcpy(tmp, str);
+    return tmp;
+}

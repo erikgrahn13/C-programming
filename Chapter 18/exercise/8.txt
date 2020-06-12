@@ -1,0 +1,16 @@
+a) 
+    x is an array of 10 elements that consists of pointers to
+    functions that takes an int argument and return a char
+b)
+    x is a function that takes an int argument and returns a
+    pointer to an int array of five elements
+c)
+    x is a function with no arguments returning a pointer to a
+    function that takes an int argument and returns a pointer
+    to a float
+d)
+    x is a function that takes two arguemnts. One int and a 
+    pointer to a function that takes an int as argument and
+    no return value. X returns a pointer to a function that 
+    takes an int as argument and has no return value
+

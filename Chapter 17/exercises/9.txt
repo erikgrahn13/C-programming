@@ -1,0 +1,2 @@
+true
+since x is just the adress to the beginning of the struct

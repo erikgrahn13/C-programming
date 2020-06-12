@@ -1,0 +1,2 @@
+No since in C89 it was not standardized how the truncation would
+be done. The result can be round either up or down

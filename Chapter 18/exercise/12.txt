@@ -1,0 +1,8 @@
+a)
+    f is a function that takes a two arguments: a function pointer
+    that takes a long argument and returns a float. And a char pointer.
+    f returns a pointer to a function that takes a double as argument
+    and returns an int.
+
+b)
+    int n = *f(g, &ch)(3.14)

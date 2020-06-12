@@ -1,0 +1,2 @@
+i is converted to float to add to f and then the expression is
+converted to double and assigned to d

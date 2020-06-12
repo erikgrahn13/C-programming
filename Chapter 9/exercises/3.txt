@@ -1,0 +1,11 @@
+int gcd(int m, int n)
+{
+    while(n > 0)
+    {
+        reminder = m % n;
+        m = n;
+        n = reminder;
+    }
+
+    return m;
+}

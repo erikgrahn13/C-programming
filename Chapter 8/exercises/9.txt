@@ -1,0 +1,14 @@
+float temperature_readings[30][24];
+float average_temperate_day;
+float average_temperture_month;
+
+for(int i = 0; i < 30; ++i)
+{
+    for(int j = 0; j < 24; ++j)
+    {
+        average_temperate_day += temperature_readings[i][j];
+    }
+    average_temperate_day /= 24;
+    average_temperture_month += average_temperate_day;
+}
+average_temperture_month /= 30;

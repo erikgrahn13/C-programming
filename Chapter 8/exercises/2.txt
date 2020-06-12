@@ -1,0 +1,2 @@
+If using a character as an array subscript you need to
+you need to subtract 48 from the character.

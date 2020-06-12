@@ -1,0 +1,55 @@
+int day_of_year(int month, int day, int year)
+{
+    int number_day;
+    number_day = day;
+
+    for(int i = 1; i < month; i++)
+    {
+        switch(i)
+        {
+            case 1:
+                number_day += 31;
+                break;
+            case 2:
+                number_day += 28;
+                break;
+            case 3:
+                number_day += 31;
+                break;
+            case 4:
+                number_day += 30;
+                break;
+            case 5:
+                number_day += 31;
+                break;
+            case 6:
+                number_day += 30;
+                break;
+            case 7:
+                number_day += 31;
+                break;
+            case 8:
+                number_day += 31;
+                break;
+            case 9:
+                number_day += 30;
+                break;
+            case 10:
+                number_day += 31;
+                break;
+            case 11:
+                number_day += 30;
+                break;
+            case 12:
+                number_day += 31;
+                break;
+        }
+
+    }
+    
+    if((year % 4) == 0 && month >= 3)
+    {
+        number_day++;
+    }
+    return number_day;
+}

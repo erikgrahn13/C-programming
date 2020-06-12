@@ -1,0 +1,5 @@
+(a) is a keyword
+(b) is not a keyword
+(c) is not a keyword
+(d) is not a keyword
+(e) is a keyword

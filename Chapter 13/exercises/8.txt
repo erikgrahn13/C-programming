@@ -1,0 +1,3 @@
+1 - str = tire-bouchon
+2 - str = tired-or-wi
+3 - str = tired-or-wired?

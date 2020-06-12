@@ -1,0 +1,15 @@
+int *crete_array(int n, int initial_value)
+{
+    int *tmp = malloc(sizeof(int)*n);
+    if(tmp == NULL)
+    {
+        return NULL;
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        tmp[i] = initial_value;
+    }
+
+    return tmp;
+}

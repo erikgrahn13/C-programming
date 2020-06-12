@@ -1,0 +1,3 @@
+A macro may evaluate its arguments more than once. Which can
+lead to different behaviour than a function if the 
+argumants contains side effects.

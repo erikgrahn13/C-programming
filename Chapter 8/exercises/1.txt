@@ -1,0 +1,2 @@
+The perosn who reads the program needs to check the type of
+the array to sure correctness of the program.

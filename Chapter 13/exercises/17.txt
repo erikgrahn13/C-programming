@@ -1,0 +1,26 @@
+bool test_extension(const char *file_name, const char *extension)
+{
+    const char *p = file_name;
+    char ch1, ch2;
+    while(*p++)
+    {
+        if(*p == '.')
+        {
+            break;
+        }
+    }
+   
+    while(*p++ || *extension)
+    {
+        ch1 = toupper(*p);
+        ch2 = toupper(*extension);
+ 
+        if(ch1 != ch2)
+        {
+            return false;
+        }
+    
+        extension++;
+    }
+    return true;
+}

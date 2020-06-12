@@ -1,0 +1,13 @@
+double inner_product(const double *a, const double *b, int n)
+{
+    double result;
+    int i;
+
+    for(i = 0; i < n; i++)
+    {
+        result += *a++ * *b++;
+    }
+
+    return result;
+
+}

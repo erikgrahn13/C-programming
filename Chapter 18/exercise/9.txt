@@ -1,0 +1,20 @@
+a) 
+    typedef char (*fPtr)(int);
+    typedef fPtr fPtr_array[10];
+    typedef fPtr_array x;
+
+b)
+    typedef int array_t[5];
+    typedef array_t *fPtr(int);
+    fPtr *x;
+    
+c)
+    typedef float *fcn(int);
+    typedef fcn (*inner_fcn)(void);
+    typedef inner_fcn x;
+
+d) 
+    typedef void *outer_fcn(int);
+    typedef void *arg_fcn_t(int);
+    typedef outer_fcn *inner_fc(int, arg_fcn_t);
+    typedef inner_fcn x;

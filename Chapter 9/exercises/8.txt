@@ -1,0 +1,4 @@
+a) legal
+b) legal
+c) illegal
+d) illegal

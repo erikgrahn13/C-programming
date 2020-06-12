@@ -1,0 +1,10 @@
+void function(char *cmd)
+{    
+    for(int i = 0; i < sizeof(file_cmd) / sizeof(file_cmd[0]); i++)
+    {
+        if(strcmp(file_cmd[i].cmd_name, cmd) == 0)
+        {
+            (*file_cmd[i].cmd_pointer)();  
+        }
+    }
+}

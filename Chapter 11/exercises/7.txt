@@ -1,0 +1,89 @@
+void split_date(int day_of_year, int year, int *month, int *day)
+{
+    int january = 31;
+    int februari = 28;
+    int march = 31;
+    int april = 30;
+    int may = 31;
+    int june = 30;
+    int july = 31;
+    int august = 31;
+    int september = 30;
+    int october = 31;
+    int november = 30;
+    int december = 31;
+
+    int count = 0;
+
+    if (year % 4 == 0)
+    {
+        februari = 29;
+    }
+
+    if (day_of_year <= january)
+    {
+        *month = 1;
+        *day = day_of_year;
+    }
+    else if (day_of_year <= january + februari)
+    {
+        *month = 2;
+        *day = day_of_year - january;
+    }
+    else if (day_of_year <= january + februari + march)
+    {
+        *month = 3;
+        *day = day_of_year - january - februari;
+    }
+
+    else if (day_of_year <= january + februari + march + april)
+    {
+        *month = 4;
+        *day = day_of_year - january - februari - march;
+    }
+    else if (day_of_year <= january + februari + march + april + may)
+    {
+        *month = 5;
+        *day = day_of_year - january - februari - march - april;
+    }
+    else if (day_of_year <= january + februari + march + april + may + june)
+    {
+        *month = 6;
+        *day = day_of_year - january - februari - march - april - may;
+    }
+    else if (day_of_year <= january + februari + march + april + may + june + july)
+    {
+        *month = 7;
+        *day = day_of_year - january - februari - march - april - may - june;
+    }
+    else if (day_of_year <= january + februari + march + april + may + june + july + august)
+    {
+        *month = 8;
+        *day = day_of_year - january - februari - march - april - may - june - july;
+    }
+    else if (day_of_year <= january + februari + march + april + may + june + july + august + september)
+    {
+        *month = 9;
+        *day = day_of_year - january - februari - march - april - may - june - july - august;
+    }
+    else if (day_of_year <= january + februari + march + april + may + june + july + august + september + october)
+    {
+        *month = 10;
+        *day = day_of_year - january - februari - march - april - may - june - july - august - september;
+    }
+    else if (day_of_year <= january + februari + march + april + may + june + july + august + september + october + november)
+    {
+        *month = 11;
+        *day = day_of_year - january - februari - march - april - may - june - july - august - september - october;
+    }
+    else if (day_of_year <= january + februari + march + april + may + june + july + august + september + october + november + december)
+    {
+        *month = 12;
+        *day = day_of_year - january - februari - march - april - may - june - july - august - september - october - november;
+    }
+    else
+    {
+        printf("Error\n");
+        exit(EXIT_FAILURE);
+    }
+}

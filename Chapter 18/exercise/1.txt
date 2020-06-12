@@ -1,0 +1,24 @@
+a) 
+    storage class:      static
+    type qualifiers:    none
+    type specifiers:    char**
+    declarators:        lookup(int level)
+    initializers:       none
+b)
+    storage class:      none
+    type qualifiers:    volatile
+    type specifiers:    unsigned long
+    declarators:        io_flags
+    initializers:       none
+c)
+    storage class:      extern
+    type qualifiers:    none
+    type specifiers:    char*, char[]
+    declarators:        file_name, path
+    initializers:       none
+d)
+    storage class:      static
+    type qualifiers:    const
+    type specifiers:    char[]
+    declarators:        token_buf
+    initializers:       ""

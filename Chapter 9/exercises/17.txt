@@ -1,0 +1,10 @@
+int fact(int n)
+{
+    int factorial_number = 1;
+    for (int i = n; i >= 1; i--)
+    {
+        factorial_number *= i;
+    }
+
+    return factorial_number;
+}

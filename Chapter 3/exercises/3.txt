@@ -1,0 +1,4 @@
+(a) equal
+(b) equal
+(c) not equal
+(d) equal

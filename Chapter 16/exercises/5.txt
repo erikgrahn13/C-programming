@@ -1,0 +1,76 @@
+a)
+    int day_of_year(struct date d)
+    {
+        int day = 0;
+        if(d.year % 4 == 0 && d.month > 2)
+        {
+            day++;
+        }
+        else if(d.day % 4 == 0 && d.month == 2 && d.day == 29)
+        {
+            day++;
+        }
+            
+        switch (d.month)
+        {
+        case 1: day = d.day; break;     
+        case 2: day += 31 + d.day; break;
+        case 3: day += 59 + d.day; break;
+        case 4: day += 90 + d.day; break;
+        case 5: day += 120 + d.day; break;
+        case 6: day += 151 +d.day; break;
+        case 7: day += 181+d.day; break;
+        case 8: day += 212+d.day; break;
+        case 9: day += 243+d.day; break;
+        case 10: day += 273+d.day; break;
+        case 11: day += 304+d.day; break;
+        case 12: day += 334+d.day; break;
+
+        
+        default:
+            break;
+        }
+
+
+        return day;
+
+    }
+
+b)
+    int compare_dates(struct date d1, struct date d2)
+    {
+        if(d1.year < d2.year)
+        {
+            return -1;
+        }
+        else if(d1.year > d2.year)
+        {
+            return 1;
+        }
+        else
+        {
+            if(d1.month < d1.month)
+            {
+                return -1;
+            }
+            else if(d1.month > d2.month)
+            {
+                return 1;
+            }
+            else
+            {
+                if(d1.day < d2.day)
+                {
+                    return -1;
+                }
+                else if(d1.day > d2.day)
+                { 
+                    return 1;
+                }
+                else 
+                {
+                    return 0;
+                }   
+            }   
+        }
+    }
