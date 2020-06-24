@@ -1,0 +1,4 @@
+Using the xor expression
+i ^= 0x0010
+
+

@@ -1,0 +1,1 @@
+#define MK_COLOR(R, G, B) ((long) (B) << 16 | (G) << 8 | (R))
