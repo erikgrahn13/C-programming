@@ -1,0 +1,3 @@
+#define GET_RED(x) ((char) (x) & 0xFF)
+#define GET_GREEN(x) ((char) (x) >> 8 & 0xFF)
+#define GET_BLUE(x) ((char) (x) >> 16 & 0xFF)
