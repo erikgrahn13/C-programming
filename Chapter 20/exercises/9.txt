@@ -1,0 +1,32 @@
+a)
+    int count_ones(unsigned char ch)
+    {
+        int number_of_bits = sizeof(ch) * 8;
+
+        int ones = 0;
+        while(number_of_bits > 0)
+        {
+            if(ch > 0)
+            {
+                ones++;
+            }
+            ch = ch >> 1;
+            
+            number_of_bits--;
+        }
+
+        return ones;
+    }
+
+b)
+    int count_ones(unsigned char ch)
+    {
+        if (ch == 0) 
+        {
+                return 0; 
+        }
+            else
+            {
+                return (ch & 1) + count_ones(ch >> 1); 
+            }
+    }
