@@ -1,0 +1,16 @@
+unsigned int reverse_bits(unsigned int n)
+{
+    int value = 0;
+    
+    for(unsigned int i = sizeof(unsigned int) * 8; i > 0; i-=4)
+    {
+        unsigned int tmp = 0;
+        tmp |= (n & 0xf);
+        tmp <<= (i - 4);
+
+        value |= tmp;
+        
+        n >>= 4;
+    }
+    return value;
+}
