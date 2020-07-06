@@ -1,0 +1,11 @@
+The precedence of the bitwise AND operator is lower than the precedence of the relational equality operator.
+To fix it we need to use paranteses around the statement.
+
+#define SHIFT_BIT 1
+#define CTRL_BIT 2
+#define ALT_BIT 4
+
+if((key_code & (SHIFT_BIT | CTRL_BIT | ALT_BIT)) == 0)
+{
+    printf("No modifier keys pressed\n");
+}
