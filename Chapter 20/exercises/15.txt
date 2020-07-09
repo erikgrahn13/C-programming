@@ -1,0 +1,4 @@
+a) It depends on how the compiler store the bitfields. It might store the bit as the most
+significant bit and for a signed variable that will make the output -1.
+
+b) To solve the problem you can instead use a unsigned int bitfield instead of signed int.
