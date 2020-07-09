@@ -1,0 +1,5 @@
+struct IEE754{
+    unsigned int sign: 1;
+    unsigned int exponent:8;
+    unsigned int fraction:23;
+};
