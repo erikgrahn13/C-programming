@@ -1,0 +1,13 @@
+union{
+    struct{
+        DWORD EAX, EBX, ECX, EDX;
+    }dword;
+    
+
+    struct{
+        WORD ax, dummyA, dummyB, bx, dummyC, cx, dummyD, dx;
+    }word;
+    struct{
+        BYTE al, ah, dummyA1, dummyA2, dummyB1, dummyB2, bl, bh, dummyC1, dummyC2, cl, ch, dummyD1, dummyD2, dl, dh;
+    }byte;
+}regs;
