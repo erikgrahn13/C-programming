@@ -1,0 +1,1 @@
+In string.h the memcpy function hides a function
