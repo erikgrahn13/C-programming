@@ -1,0 +1,1 @@
+The function prototype because the compiler needs to know that function layout before a call can be made
