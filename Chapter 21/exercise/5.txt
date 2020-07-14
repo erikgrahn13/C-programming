@@ -1,0 +1,3 @@
+islower is a parameterized macro that evaluates it's argument twice
+and that is not allowed in the C-standard. This macro might lead
+to side effects if used wrong.
