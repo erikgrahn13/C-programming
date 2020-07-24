@@ -1,0 +1,12 @@
+FILE *fp;
+
+if(fp = fopen(filename, "r"))
+{
+    read characters until end-of-file
+}
+else
+{
+    exit(EXIT_FAILURE)
+}
+
+fclose(fp);
