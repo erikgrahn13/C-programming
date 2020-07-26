@@ -1,0 +1,2 @@
+Yes, the %04d conversion specification will include the negative
+number sign in the field width whether the %.4d will not.
