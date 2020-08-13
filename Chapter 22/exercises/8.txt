@@ -1,0 +1,2 @@
+They are not equivalent. "%ls" store a null character at the end while " %c" will just store
+the non blank character
