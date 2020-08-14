@@ -1,0 +1,5 @@
+yes the program would compile without an error.
+The != operator has precedence over the = operator and would therefore
+compare getc(source_fp) != EOF first and then assigne the value of 1 to ch
+which will be outputed by putc. When the getc reaches the EOF it will assign
+0 to ch and output 0 to the dest_fp.
