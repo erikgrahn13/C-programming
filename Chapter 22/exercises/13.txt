@@ -1,0 +1,32 @@
+int line_length(const char *filename, int n)
+{
+    FILE *fp;
+    int ch;
+    int line_len = 0;
+    int line = 1;
+
+    fp = fopen(filename, "r");
+
+    if(fp == NULL)
+    {
+        fprintf(stderr, "Error opening file\n");
+        return 0;
+    }
+
+    while((ch = fgetc(fp)) != EOF)
+    {
+        if(n == line && ch != '\n')
+        {
+            line_len++;
+        }
+
+        if(ch == '\n')
+        {
+            line++;
+        }
+    }
+
+    fclose(fp);
+
+    return line_len;
+}
