@@ -1,0 +1,35 @@
+a)
+    char *my_fgets(char * restrict s, int n, FILE * restrict stream)
+    {
+        char ch;
+        int number_of_characters = 0;
+        
+        while((ch = getc(stream)) != '\n' && number_of_characters < n)
+        {
+            s[number_of_characters++] = ch;
+        }
+
+        if(ch != '\n' && number_of_characters != (n-1))
+        {
+            return NULL;
+        }
+
+        s[number_of_characters] = '\0';
+
+        return s;
+    }
+
+b)
+    int my_fputs(const char * restrict s, FILE * restrict stream)
+    {
+        while(*s != '\0')
+        {
+            if(putc(*s, stream) == EOF)
+            {
+                return EOF;
+            }
+            s++;
+        }
+
+        return 1;
+    }
