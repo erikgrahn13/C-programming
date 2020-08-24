@@ -1,0 +1,11 @@
+a)
+    fseek(fp, n*64, SEEK_SET);
+
+b)
+    fseek(fp, -64, SEEK_END);
+
+c)
+    fseek(fp, 64, SEEK_CUR);
+
+d)
+    fseek(fp, -128, SEEK_CUR);
