@@ -1,0 +1,18 @@
+double evaluate_polynomial(double a[], int n, double x)
+{
+    double result;
+
+    while(n >= 0)
+    {
+        if(n > 0)
+        {
+            result += fma(a[n], x, a[n-1]);
+        }
+        else
+        {
+            result += a[n];
+        }
+        
+        n--;
+    }
+}
