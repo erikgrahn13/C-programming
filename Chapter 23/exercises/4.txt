@@ -1,0 +1,17 @@
+bool is_c_identifier(char *str)
+{
+    if(!isalpha(str[0]) && str[0] != '_')
+    {
+        return false;
+    }
+
+    char *p;
+    for(p = &str[1]; *p != '\0'; p++)
+    {
+        if(!isalnum(*p) && *p != '_')
+        {
+            return false;
+        }
+    }
+    return true;
+}
