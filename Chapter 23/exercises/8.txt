@@ -1,0 +1,14 @@
+int numchar(const char *s, char ch)
+{
+    int counter = 0;
+
+    s = strchr(s+1, ch);
+
+    while(s != NULL)
+    {
+        counter++;
+        s = strchr(s+1, ch);
+    }
+    
+    return counter;
+}
