@@ -1,0 +1,4 @@
+if(strstr("foo:bar:baz", str) != NULL)
+
+it assumes that str does not contain the ':'
+character and is at least three charaters
