@@ -1,0 +1,15 @@
+int count_words(char *sentence)
+{
+    int number_of_words = 0;
+    if(strtok(sentence, " \t\r\n\v\f") != NULL)
+    {
+        number_of_words++;
+    }
+
+    while(strtok(NULL, " \t\r\n\v\f") != NULL)
+    {
+        number_of_words++;
+    }
+
+    return number_of_words;
+}
