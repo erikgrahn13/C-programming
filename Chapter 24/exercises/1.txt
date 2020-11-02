@@ -1,0 +1,8 @@
+a)  it makes debugging during development phase much easier. Problems that are
+    beyond the control of the program should be handled in another way to recover than
+    using assertion,
+
+b)
+    1. operating system actions and signaling
+    2. hardware failures
+    3. scheduling
