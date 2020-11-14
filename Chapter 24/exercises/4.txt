@@ -1,0 +1,16 @@
+a)
+    double try_math_fcn(double (*math_fcn)(double), double x, const char* str)
+    {
+        errno = 0;
+
+        double y = math_fcn(x);
+        if(errno != 0)
+        {
+            perror(str);
+            exit(EXIT_FAILURE);
+        }
+        return y;
+    }
+
+b)
+    #define TRY_MATH_FCN(A, B) (try_math_fcn(A, B, "Error in call of " #A))
