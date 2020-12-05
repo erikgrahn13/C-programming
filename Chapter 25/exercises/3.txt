@@ -1,0 +1,1 @@
+No since the Shift-JIS requires either one or two bytes per character
