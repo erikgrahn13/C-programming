@@ -1,0 +1,51 @@
+void my_printf(const char *format, ...)
+{
+    va_list ap;
+    int current;
+    int count = 0;
+    const char *p = format;
+    int digit;
+    char *string;
+    
+    va_start(ap, format);
+
+    for(p = format; *p != '\0'; p++)
+    {
+        if(*p != '%')
+        {
+            putchar(*p);
+            continue;
+        }
+        
+        if(*(p+1) == 'd')
+        {
+            current = va_arg(ap, int);
+            int temp = current;
+            int power = 1;
+            
+            while(temp > 9)
+            {
+                temp /= 10;
+                power *= 10;
+            }
+            
+            do {
+                digit = current / power;
+                putchar(digit + '0');
+                current -= digit * power;
+                power /= 10;
+            } while (current > 0);
+                    
+        }
+        else if(*++p == 's')
+        {
+            string = va_arg(ap , char*);
+            for(char *q = string; *q != '\0'; q++)
+            {
+                putchar(*q);
+            }
+        }
+    }
+
+    va_end(ap);
+}
