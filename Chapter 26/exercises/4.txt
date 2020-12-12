@@ -1,0 +1,15 @@
+void display(int n, ...)
+{
+    va_list ap;
+    char *strings;
+
+    va_start(ap, n);
+
+    for(int i = 0; i < n; i++)
+    {
+        strings = va_arg(ap, char*);
+        printf("%s ", strings);
+    }
+
+    va_end(ap);
+}
