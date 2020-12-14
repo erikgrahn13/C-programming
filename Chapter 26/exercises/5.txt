@@ -1,0 +1,47 @@
+char *vstrcat(const char *first, ...)
+{
+    va_list ap;
+    char *p;
+    int count = 0;
+    char *new_string;
+
+    va_start(ap, first);
+    p = first;
+
+    while(p != NULL)
+    {
+        while(*p++)
+        {
+            count++;
+        }
+        
+        p = va_arg(ap, char*);
+    }
+
+    new_string = malloc(sizeof(char) * (count + 1));
+
+    if(new_string == NULL)
+    {
+        printf("Error creating memory for new string\n");
+        va_end(ap);
+        return NULL;
+    }
+
+    va_end(ap);
+    va_start(ap, first);
+    p = first;
+    strcpy(new_string, p);
+    p = va_arg(ap, char*);
+
+    while(p != NULL)
+    {
+        
+        strcat(new_string, p);
+
+        
+        p = va_arg(ap, char*);
+        
+    }
+    va_end(ap);
+    return new_string;
+}
