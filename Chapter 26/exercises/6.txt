@@ -1,0 +1,28 @@
+char *max_pair(int num_pairs, ...)
+{
+    va_list ap;
+    int highest = 0;
+    int current;
+    char *string;
+    char *highest_string;
+
+    va_start(ap, num_pairs);
+
+    current = va_arg(ap, int);
+    highest = current;
+    string = va_arg(ap, char*);
+
+    for(int i = 0; i < num_pairs; i++)
+    {
+        current = va_arg(ap, int);
+        string = va_arg(ap, char*);
+
+        if(current > highest)
+        {
+            highest_string = string;
+        }
+    }
+
+    va_end(ap);
+    return highest_string;
+}
