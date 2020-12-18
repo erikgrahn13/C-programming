@@ -1,0 +1,2 @@
+Trying to convert the string pointed to by p to an integer with the base 10.
+p is pointing to the first characeter not included in the conversion
