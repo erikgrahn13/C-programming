@@ -1,0 +1,8 @@
+double random_double()
+{
+    double n;
+
+    n = (double)rand() / (RAND_MAX + 1);
+
+    return n;
+}
