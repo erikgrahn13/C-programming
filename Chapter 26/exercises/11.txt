@@ -1,0 +1,2 @@
+For the bsearch to function properly even though the array is only partially sorted,
+only the elements that are to be compared has to be sorted.
